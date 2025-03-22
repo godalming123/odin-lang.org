@@ -1329,6 +1329,7 @@ A distinct type allows for the creation of a new type with the same underlying s
 ```odin
 My_Int :: distinct int
 #assert(My_Int != int)
+x := My_Int(3)
 ```
 
 Aggregate types (struct, enum, union) will always be distinct even when named.
